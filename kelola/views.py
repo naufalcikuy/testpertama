@@ -42,3 +42,6 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'kelola/post_edit.html', {'form': form})
+
+def show_knowledge(request):
+    return render(request, 'kelola/show_knowledge.html')
